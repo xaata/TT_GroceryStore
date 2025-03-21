@@ -13,6 +13,10 @@ GameObject:
   - component: {fileID: 8064885251765604797}
   - component: {fileID: 7176050796390576683}
   - component: {fileID: 6860579933515908155}
+  - component: {fileID: 2051024053327193924}
+  - component: {fileID: -5216581545356989353}
+  - component: {fileID: 4891552249604055664}
+  - component: {fileID: 4003865006909398438}
   m_Layer: 0
   m_Name: Orange
   m_TagString: Untagged
@@ -133,3 +137,57 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &2051024053327193924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6839262930555805219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ba11dc318fcee0488327922b322435c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _actions:
+  - {fileID: 4003865006909398438}
+--- !u!114 &-5216581545356989353
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6839262930555805219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1331b58c37acf04698bca2e07924521, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _button: {fileID: 0}
+--- !u!114 &4891552249604055664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6839262930555805219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43dd60e7eb0717345a8eaac72aad694d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _dropForce: 1
+  _dropButton: {fileID: 0}
+--- !u!114 &4003865006909398438
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6839262930555805219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f82e97f1008d86247a72f4ef2a6a98e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pickUpableItem: {fileID: -5216581545356989353}
