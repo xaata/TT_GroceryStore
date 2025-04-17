@@ -7,18 +7,17 @@ using Utilities;
 public class PlayerInteract : MonoBehaviour
 {
     [SerializeField] private Transform _usePointer;
-    [SerializeField] private Transform _playerCam;
+    [Zenject.Inject(Id = "CameraTransform")] private Transform _playerCam;
 
     [Header("Interaction Settings")]
     [SerializeField] private float _capsuleCastRadius = 1f;
     [SerializeField] private float _capsuleCastLength = 2f;
     [SerializeField] private bool _debugGizmos = true;
-
+    [Zenject.Inject]
     private PlayerInputAction _inputAction;
 
     private void Awake()
     {
-        _inputAction = new PlayerInputAction();
         _inputAction.Player.Interact.performed += ctx => Interact();
     }
 

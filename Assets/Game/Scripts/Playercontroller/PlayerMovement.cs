@@ -1,22 +1,23 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
     [SerializeField] private float _moveSpeed = 5f;
     [SerializeField] private float _jumpForce = 5f;
     [SerializeField] private float _gravity = -9.81f;
-    [SerializeField] private Transform _cameraTransform;
-
+    [Zenject.Inject(Id = "CameraTransform")] private Transform _cameraTransform;
+    [Zenject.Inject]
     private CharacterController _characterController;
+    [Zenject.Inject]
     private PlayerInputAction _inputAction;
     private Vector2 _moveInput;
     private Vector3 _velocity;  
 
     private void Awake()
-    {
-        _inputAction = new PlayerInputAction();
-        _characterController = GetComponent<CharacterController>();
+    {      
 
+         
         _inputAction.Player.Move.performed += ctx => _moveInput = ctx.ReadValue<Vector2>();
         _inputAction.Player.Move.canceled += ctx => _moveInput = Vector2.zero;
     }

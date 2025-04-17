@@ -134,8 +134,8 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
                     ""isPartOfComposite"": true
                 },
                 {
-                    ""name"": ""PC"",
-                    ""id"": ""1ab26177-58ed-42d1-ac4c-66988c8fb210"",
+                    ""name"": ""2D Vector PC"",
+                    ""id"": ""a2bd63c0-4ec6-4bec-8a1f-5c811be807e5"",
                     ""path"": ""2DVector"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -154,7 +154,7 @@ public partial class @PlayerInputAction: IInputActionCollection2, IDisposable
             ""devices"": [
                 {
                     ""devicePath"": ""<Touchscreen>"",
-                    ""isOptional"": false,
+                    ""isOptional"": true,
                     ""isOR"": false
                 }
             ]
